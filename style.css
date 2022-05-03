@@ -4,20 +4,22 @@ body, ul {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: sans-serif;
 }
 
 a:hover {
     background-color: rgba(0,0,0,0.05);
-    color: black;
+    color: white;
     text-decoration: none;
+    text-decoration-line: underline;
 }
 
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 50px;
 }
 
 #header {
@@ -27,7 +29,7 @@ a:hover {
     padding: 1rem;
     box-sizing: border-box;
     justify-content: space-between;
-    background-color: #e7e7e7;
+    background-color: rgb(118, 118, 228);
 }
 
 #menu {
@@ -41,11 +43,43 @@ a:hover {
     padding: .5rem;
 }
 
+#menu a:hover {
+    display: block;
+    padding: .5rem;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
 #btn-mobile {
     display: none;
 }
 
-@media (max-width: 600px) {
+#btn {
+    border-radius: 50px;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-login {
+    margin-left: 200px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(118, 118, 228);
+}
+
+.btn-demo {
+    margin-right: 100px;
+    border: none;
+    color: rgb(118, 118, 228);
+    background-color: white;
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-left: 0;
+    }
     #btn-mobile {
         display: block;
     }
@@ -55,7 +89,7 @@ a:hover {
         width: 100%;
         top: 70px;
         right: 0px;
-        background: #e7e7e7;
+        background: rgb(118, 118, 228);
         transition: .6s;
         z-index: 1000;
         height: 0px;
@@ -63,7 +97,7 @@ a:hover {
         overflow-y: hidden;
     }
     #nav.active #menu {
-        height: calc(100vh - 340px);
+        height: calc(100vh - 300px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -104,7 +138,72 @@ a:hover {
     #nav.active #hamburguer::before {
         transform: rotate(135deg);
     }
-    #nav .btn {
+    #nav #btn {
         display: none;
     }
+}
+
+@media (min-width: 1700px){
+    /* #logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+    
+    #header {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 1rem;
+        box-sizing: border-box;
+        justify-content: space-between;
+        background-color: rgb(118, 118, 228);
+    } */
+    
+    #menu {
+        display: flex;
+        list-style: none;
+        gap: .5rem;
+        /* margin-right: 200px; */
+    }
+    
+    #menu a {
+        display: block;
+        padding: .5rem;
+    }
+    
+    #menu a:hover {
+        display: block;
+        padding: .5rem;
+        text-decoration-line: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+    }
+    
+    #btn-mobile {
+        display: none;
+    }
+    
+    #btn {
+        border-radius: 50px;
+        width: 150px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .btn-login {
+        margin-left: 400px;
+        margin-right: 20px;
+        border: 1px solid white;
+        color: white;
+        background-color: rgb(118, 118, 228);
+    }
+    
+    .btn-demo {
+        margin-right: 50px;
+        border: none;
+        color: rgb(118, 118, 228);
+        background-color: white;
+    }
+    
 }
