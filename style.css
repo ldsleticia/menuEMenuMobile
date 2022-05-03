@@ -29,7 +29,7 @@ a:hover {
     padding: 1rem;
     box-sizing: border-box;
     justify-content: space-between;
-    background-color: rgb(118, 118, 228);
+    background-color: #2495E9;
 }
 
 #menu {
@@ -66,13 +66,13 @@ a:hover {
     margin-left: 200px;
     border: 1px solid white;
     color: white;
-    background-color: rgb(118, 118, 228);
+    background-color: #2495E9;
 }
 
 .btn-demo {
     margin-right: 100px;
     border: none;
-    color: rgb(118, 118, 228);
+    color: #2495E9;
     background-color: white;
 }
 
@@ -89,7 +89,7 @@ a:hover {
         width: 100%;
         top: 70px;
         right: 0px;
-        background: rgb(118, 118, 228);
+        background: #2495E9;
         transition: .6s;
         z-index: 1000;
         height: 0px;
@@ -156,13 +156,13 @@ a:hover {
         margin-right: 20px;
         border: 1px solid white;
         color: white;
-        background-color: rgb(118, 118, 228);
+        background-color: #2495E9;
     }
     
     .btn-demo {
         margin-right: 50px;
         border: none;
-        color: rgb(118, 118, 228);
+        color: #2495E9;
         background-color: white;
     }
     
